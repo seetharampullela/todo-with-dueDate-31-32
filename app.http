@@ -1,0 +1,24 @@
+GET http://localhost:3000/todos/?status=TO%20DO
+###
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id": 9,
+  "todo": "Complete coding Assignment-2",
+  "priority": "HIGH",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2022-0-06"
+}
+
+###
+PUT http://localhost:3000/todos/1/
+Content-Type: application/json
+
+{
+  "dueDate": "2022-01-06"
+}
+
+###
+DELETE http://localhost:3000/todos/6
